@@ -1,0 +1,15 @@
+@use 'src/styles/vars';
+
+.technology{
+    border-bottom:solid black 2px;
+    height: 70px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: vars.$backgroundGrey;
+}
+.technology:hover{
+    background-color: vars.$greenColor;
+    color:#FFF;
+}

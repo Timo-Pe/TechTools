@@ -1,0 +1,19 @@
+@use 'src/styles/vars';
+
+.footer{
+    width: 100%;
+    background-color:vars.$backgroundBlack;
+    height: 7em;
+    display: flex;
+    padding-top:1.2em;
+    padding-bottom:1.2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-annotation{
+        
+        color:#FFF;
+    }
+
+}

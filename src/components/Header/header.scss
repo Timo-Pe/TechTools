@@ -1,0 +1,20 @@
+@use 'src/styles/vars';
+
+.header{
+    width: 100%;
+    background-color:vars.$backgroundBlack;
+    height: 8em;
+    display: flex;
+    padding-top:1.2em;
+    padding-bottom:1.2em;
+
+    &-img {
+        margin-left:3em;
+    }
+
+    &-title{
+        color:#FFF;
+        align-self: center;
+        margin-left: 0.6em;
+    }
+}

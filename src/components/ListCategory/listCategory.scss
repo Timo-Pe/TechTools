@@ -1,0 +1,12 @@
+
+
+.list-category{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 25%;
+    width: 70%;
+    flex-wrap: wrap;
+    margin:auto;
+    align-items: center;
+}

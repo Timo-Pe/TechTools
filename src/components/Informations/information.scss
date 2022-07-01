@@ -1,0 +1,25 @@
+.informations{
+    width: 45%;
+    margin-left: 3em;
+
+    &-title{
+        display:flex;
+        justify-content: space-between;
+        padding-right: 3em;
+    }
+    &-compatibility{
+        text-align: center;
+        margin-top: 1em;
+    }
+    &-listCompatibility{
+        margin-top: 0.5em;
+        display: flex;
+        gap:1em;
+        justify-content: center;
+    }
+    &-description{
+        margin-top: 2em;
+        text-align: justify;
+        line-height: 1.6em;
+    }
+}

@@ -1,13 +1,25 @@
 // == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
+import ListCategory from 'src/components/ListCategory';
+import ListTechnologies from 'src/components/ListTechnologies';
+import Informations from 'src/components/Informations';
+import Footer from 'src/components/Footer';
+import Header from 'src/components/Header';
+import './styles.scss';
 
 // == Composant
 const App = () => (
-  <div className="app">
-    <img src={reactLogo} alt="react logo" />
-    <h1>Composant : App</h1>
-  </div>
+  <div className="container-app">
+        <Header />
+      <div className="app">
+            <ListCategory />
+        <section className="container-technologies">
+            <ListTechnologies />
+            <Informations />
+        </section>
+      </div>
+      <Footer />
+    </div>
+    
 );
 
 // == Export
