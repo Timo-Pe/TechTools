@@ -19,5 +19,66 @@
         align-items: center;
         background-color: vars.$greenColor;
         border-radius: 12px 12px 0 0;
+        text-transform: uppercase;
+        &-green{
+            background-color: vars.$greenColor;
+        }
+        &-pink{
+            background-color: vars.$pinkColor;
+        }
+        &-blue{
+            background-color: vars.$blueColor;
+        }
+        &-purple{
+            background-color: vars.$purpleColor;
+        }
+    }
+
+    
+}
+
+
+.technology{
+    border-bottom:solid black 2px;
+    height: 70px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: vars.$backgroundGrey;
+    text-transform: uppercase;
+
+    &-green{
+        &:hover{
+            background-color: vars.$greenColor;
+            span{
+                color:#FFF;
+            }
+        }
+    }
+    &-blue{
+        &:hover{
+            background-color: vars.$blueColor;
+            span{
+                color:#FFF;
+            }
+        }
+    }
+    &-pink{
+        &:hover{
+            background-color: vars.$pinkColor;
+            span{
+                color:#FFF;
+            }
+        }
+    }
+    &-purple{
+        &:hover{
+            background-color: vars.$purpleColor;
+            span{
+                color:#FFF;
+            }
+        }
     }
 }
+

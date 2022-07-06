@@ -1,6 +1,6 @@
+@use 'src/styles/vars';
 
-
-.list-category{
+.category-list{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -9,4 +9,70 @@
     flex-wrap: wrap;
     margin:auto;
     align-items: center;
+
+    
+}
+.category{
+    background-color: vars.$greenColor;
+    border-radius: 12px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-title{
+        color:#FFF;
+        text-transform: uppercase;
+    }
+}
+
+
+.purple{
+    background-color: vars.$purpleColor;
+    &:hover{
+        background-color: #FFF;
+        border:2px solid vars.$purpleColor;
+        h2{
+            color:vars.$purpleColor;
+        }
+    }
+    &:active{
+        background-color: #FFF;
+        border:2px solid vars.$purpleColor;
+        h2{
+            color:vars.$purpleColor;
+        }
+    }
+
+}
+.blue{
+    background-color: vars.$blueColor;
+    &:hover{
+        background-color: #FFF;
+        border:2px solid vars.$blueColor;
+        h2{
+            color:vars.$blueColor;
+        }
+    }
+}
+.pink{
+    background-color: vars.$pinkColor;
+    &:hover{
+        background-color: #FFF;
+        border:2px solid vars.$pinkColor;
+        h2{
+            color:vars.$pinkColor;
+        }
+    }
+}
+.green{
+    background-color: vars.$greenColor;
+    &:hover{
+        background-color: #FFF;
+        border:2px solid vars.$greenColor;
+        h2{
+            color:vars.$greenColor;
+        }
+    }
 }

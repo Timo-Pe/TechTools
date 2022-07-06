@@ -1,14 +1,16 @@
 // == Import
 import './listTechnologies.scss';
-import Technology from 'src/components/ListTechnologies/Technology';
+
 // == Composant
-const ListTechnologies = () => (
+const ListTechnologies = ({tools, categoryName, categoryColor, handleClick}) => (
     <div className='listTechnologies'>
-        <h2 className="listTechnologies-title">3D</h2>
-        <Technology />
-        <Technology />
-        <Technology />
-        <Technology />
+        <h2 className={`listTechnologies-title listTechnologies-title-${categoryColor}`}>{categoryName}</h2>
+            {tools.map((tool) => (
+                <a href="#" id={tool.id} className={`technology technology-${categoryColor}`} key={tool.id} onClick={handleClick}>
+                    <span className="technologies-title">{tool.name}</span>
+                </a>
+            ))}
+            
     </div>
 );
 

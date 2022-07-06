@@ -2,10 +2,12 @@
     width: 45%;
     margin-left: 3em;
 
+
     &-title{
         display:flex;
         justify-content: space-between;
         padding-right: 3em;
+        text-transform: uppercase;
     }
     &-compatibility{
         text-align: center;
