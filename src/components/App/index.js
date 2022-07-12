@@ -28,7 +28,7 @@ const [descriptionTechnology, setDescriptionTechnology] = useState("");
 
 
 
-const updateCategory = (e) => {
+const handleClickCategory = (e) => {
 e.preventdefault;
 let idSelect = e.target.id;
   
@@ -62,7 +62,7 @@ const handleClickTechnology = (e) => {
       <div className="container-app">
             <Header />
           <div className="app">
-                <ListCategory selected={nameCategory} updateCategories={updateCategory} datas={datas} />
+                <ListCategory selected={nameCategory} updateCategories={handleClickCategory} datas={datas} />
             <section className="container-technologies">
               <ListTechnologies tools={toolsCategory} categoryName={nameCategory} categoryColor={colorCategory} handleClick={handleClickTechnology}/>
                 <Informations desc={descriptionTechnology} compatibility={compatibilityTechnology} name={nameTechnology}/>
